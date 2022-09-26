@@ -1,16 +1,11 @@
 # OpenShift GitHub Actions Runner Chart 
 
-[![Helm Lint](https://github.com/redhat-actions/openshift-actions-runner-chart/workflows/Helm%20Lint/badge.svg)](https://github.com/redhat-actions/openshift-actions-runner-chart/actions)
-[![Link checker](https://github.com/redhat-actions/openshift-actions-runner-chart/workflows/Link%20checker/badge.svg)](https://github.com/redhat-actions/openshift-actions-runner-chart/actions)
-[![Publish chart to Pages](https://github.com/redhat-actions/openshift-actions-runner-chart/workflows/Publish%20chart%20to%20Pages/badge.svg)](https://github.com/redhat-actions/openshift-actions-runner-chart/actions)
-
-[![Tag](https://img.shields.io/github/v/tag/redhat-actions/openshift-actions-runner-chart)](https://github.com/redhat-actions/openshift-actions-runner-chart/tags)
-[![Quay org](https://img.shields.io/badge/quay-redhat--github--actions-red)](https://quay.io/organization/redhat-github-actions)
+This repository is a fork of the [**Red Hat Actions Runner Chart**](https://github.com/redhat-actions/openshift-actions-runner-chart) to support VPN clients in the deployed runner.
 
 This repository contains a Helm chart for deploying one or more self-hosted <!-- markdown-link-check-disable --> [GitHub Actions Runners]((https://docs.github.com/en/actions/hosting-your-own-runners/about-self-hosted-runners)) <!-- markdown-link-check-enable -->
 into a Kubernetes cluster. By default, the container image used is the [**OpenShift Actions Runner**](https://github.com/redhat-actions/openshift-actions-runner).
 
-You can deploy runners automatically in an Actions workflow using the [**OpenShift Actions Runner Installer**](https://github.com/redhat-actions/openshift-actions-runner-installer).
+You can deploy runners automatically in an Actions workflow using the [**Action Runner Installation**](https://github.com/cloud-native-toolkit/action-runner-installation).
 
 While this chart and the images are developed for and tested on OpenShift, they do not contain any OpenShift specific code and should be compatible with any Kubernetes platform.
 
@@ -26,10 +21,10 @@ This GitHub repository serves a Helm repository through GitHub Pages.
 
 The repository can be added with:
 ```
-helm repo add openshift-actions-runner https://redhat-actions.github.io/openshift-actions-runner-chart
+helm repo add openshift-actions-runner https://cloud-native-toolkit.github.io/action-runner-chart
 ```
 
-The packaged charts can be browsed [here](https://github.com/redhat-actions/openshift-actions-runner-chart/tree/release-chart/packages).
+The packaged charts can be browsed [here](https://github.com/cloud-native-toolkit/action-runner-chart/tree/gh-pages/packages).
 
 ## Installing runners
 
@@ -43,12 +38,12 @@ You can install runners into your cluster using the Helm chart in this repositor
 
     b. Create a GitHub App and install into your org or user account as per the app instructions in the [runner image README](https://github.com/redhat-actions/openshift-actions-runners/blob/main/docs/github-app-authentication.md).
 
-- Note that the default `secrets.GITHUB_TOKEN` **does not** have permission to manage self-hosted runners. See [Permissions for the GITHUB_TOKEN](https://docs.github.com/en/actions/reference/authentication-in-a-workflow#permissions-for-the-github_token).
+- Note that the default `secrets.GITHUB_TOKEN` **does not** have permission to manage self-hosted runners. 
 
 3. Add this repository as a Helm repository.
 ```bash
 helm repo add openshift-actions-runner \
-    https://redhat-actions.github.io/openshift-actions-runner-chart \
+    https://cloud-native-toolkit.github.io/action-runner-chart \
 && helm repo update
 ```
 You can also clone this repository and reference the chart's directory. This allows you to modify the chart if necessary.
