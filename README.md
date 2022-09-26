@@ -121,4 +121,4 @@ The resources are also labeled with `app.kubernetes.io/instance={{ .Release.Name
 kubectl get all,secret -l=app.kubernetes.io/instance=$RELEASE_NAME
 ```
 
-If the pods are created but stuck in a crash loop, view the logs with `kubectl logs <podname>` to see the problem. Refer to the [runner container troubleshooting](https://github.com/redhat-actions/openshift-actions-runner#troubleshooting) to resolve any issues.
+If the pods are created but stuck in a crash loop, view the logs with `kubectl logs <podname>` to see the problem. Refer to the [runner container troubleshooting](https://github.com/redhat-actions/openshift-actions-runner#troubleshooting) to resolve any issues. 
