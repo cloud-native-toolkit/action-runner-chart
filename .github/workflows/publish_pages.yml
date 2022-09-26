@@ -4,8 +4,8 @@ on:
     tags:
       - "v*"
 env:
-  PAGES_BRANCH: release-chart
-  PAGES_URL: https://redhat-actions.github.io/openshift-actions-runner-chart/
+  PAGES_BRANCH: gh-pages
+  PAGES_URL: https://cloud-native-toolkit.github.io/action-runner-chart/
   CHART_OUTPUT_DIR: packages/
   CHART_SRC_DIR: .
 
