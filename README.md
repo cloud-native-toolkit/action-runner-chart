@@ -24,7 +24,7 @@ The repository can be added with:
 helm repo add openshift-actions-runner https://cloud-native-toolkit.github.io/action-runner-chart
 ```
 
-The packaged charts can be browsed [here](https://github.com/cloud-native-toolkit/action-runner-chart/tree/gh-pages/packages).
+The packaged charts can be browsed [here](https://github.com/cloud-native-toolkit/action-runner-chart/releases).
 
 ## Installing runners
 
