@@ -29,7 +29,7 @@ The repository can be added with:
 helm repo add openshift-actions-runner https://redhat-actions.github.io/openshift-actions-runner-chart
 ```
 
-The packaged charts can be browsed [here](https://github.com/redhat-actions/openshift-actions-runner-chart/tree/release-chart/packages).
+The packaged charts can be browsed [here](https://github.com/cloud-native-toolkit/action-runner-chart/releases).
 
 ## Installing runners
 
