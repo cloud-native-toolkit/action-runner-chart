@@ -43,7 +43,7 @@ You can install runners into your cluster using the Helm chart in this repositor
 
     b. Create a GitHub App and install into your org or user account as per the app instructions in the [runner image README](https://github.com/redhat-actions/openshift-actions-runners/blob/main/docs/github-app-authentication.md).
 
-- Note that the default `secrets.GITHUB_TOKEN` **does not** have permission to manage self-hosted runners. See [Permissions for the GITHUB_TOKEN](https://docs.github.com/en/actions/reference/authentication-in-a-workflow#permissions-for-the-github_token).
+- Note that the default `secrets.GITHUB_TOKEN` **does not** have permission to manage self-hosted runners. 
 
 3. Add this repository as a Helm repository.
 ```bash
