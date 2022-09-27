@@ -2,6 +2,14 @@ apiVersion: v1
 entries:
   actions-runner:
   - apiVersion: v2
+    created: "2022-09-27T11:49:06.547100994+10:00"
+    description: Install GitHub Action self-hosted runners into a Kubernetes cluster.
+    digest: 4bc0c087c5666d0c74ceea6de7f82e1afc860bfca74e9bc66ed97b54f6e82161
+    name: actions-runner
+    urls:
+    - https://github.com/cloud-native-toolkit/action-runner-chart/releases/download/actions-runner-1.0.3/actions-runner-1.0.3.tgz
+    version: 1.0.3
+  - apiVersion: v2
     created: "2022-09-27T10:47:01.531164549+10:00"
     description: Install GitHub Action self-hosted runners into a Kubernetes cluster.
     digest: a16607090a9ec627f048a0261a058c74fae6059d45622186eb7b38bdad283dec
@@ -17,4 +25,4 @@ entries:
     urls:
     - https://github.com/cloud-native-toolkit/action-runner-chart/releases/download/actions-runner-1.0.1/actions-runner-1.0.1.tgz
     version: 1.0.1
-generated: "2022-09-27T10:47:01.531184479+10:00"
+generated: "2022-09-27T11:49:06.547148512+10:00"
