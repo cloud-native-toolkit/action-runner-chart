@@ -27,11 +27,6 @@ spec:
         app.kubernetes.io/instance: {{ .Release.Name }}
     spec:
       serviceAccountName: {{ .Values.serviceAccountName }}
-      securityContext:
-        privileged: true
-        capabilities:
-          add:
-            - NET_ADMIN
 
       {{- with .Values.imagePullSecrets }}
       imagePullSecrets:
@@ -124,6 +119,10 @@ spec:
         {{- end }}
 
           securityContext:
+            privileged: true
+            capabilities:
+              add:
+                - NET_ADMIN
 
           resources:
             requests:
